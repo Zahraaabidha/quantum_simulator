@@ -1,20 +1,51 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Quantum Visual Simulator
 
-# Run and deploy your AI Studio app
+An interactive web-based quantum simulator that makes qubit behavior visible and intuitive.
 
-This contains everything you need to run your app locally.
+Built for **QtHack04 — Problem Statement 16** at SRMIST Kattankulathur.
 
-View your app in AI Studio: https://ai.studio/apps/471c204e-7b74-4edb-b577-4b0c4aedb724
+---
+
+## What it does
+
+Users apply quantum gates and watch the qubit state evolve in real time across three synchronized visualization modes:
+
+- **Bloch Sphere** — 3D particle shader with a state vector arrow
+- **Wave Mode** — probability amplitude as animated 3D bars
+- **Phase Plane** — α and β as complex vectors in the complex plane
+
+Gates available: Pauli-X, Hadamard, Pauli-Z, and Measurement.
+
+The physics is accurate — the qubit is modeled using complex amplitudes α and β with correct gate matrix transformations and Born rule measurement statistics.
+
+---
+
+## VR Extension
+
+Built in Unity 6 with XR Interaction Toolkit. Users press physical buttons in an immersive 3D environment to apply quantum gates and observe the Bloch sphere respond in real space.
+
+---
+
+## Tech Stack
+
+- React + TypeScript
+- Three.js + React Three Fiber
+- Framer Motion
+- Google Gemini API
+- Unity 6 + XR Interaction Toolkit
+
+---
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+1. Install dependencies: `npm install`
+2. Add your Gemini API key to `.env.local` as `GEMINI_API_KEY`
+3. Run: `npm run dev`
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Future Scope
+
+- ESP32 hardware controller with potentiometer knob
+- Mobile AR via ARCore
+- Multi-qubit entanglement and CNOT gate visualization
