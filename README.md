@@ -2,8 +2,6 @@
 
 An interactive web-based quantum simulator that makes qubit behavior visible and intuitive.
 
-Built for **QtHack04 — Problem Statement 16** at SRMIST Kattankulathur.
-
 ---
 
 ## What it does
